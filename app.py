@@ -231,6 +231,8 @@ TEXT = {
                "「大多数租约在」是中间一半（第 25 到第 75 百分位）。查不到的数据显示为「查不到」，不做任何估算。"
                "房源链接打开的是 PropertyGuru 的搜索结果，本工具不收任何费用或佣金。"),
     "rent_src": ("URA Residential Rental Search, %s, built %s", "URA 住宅租赁数据，%s，更新于 %s"),
+    "feedback": ("💬 **Tried it? Tell us what helped and what didn't**: [give feedback](%s) (2 minutes, no personal details needed)",
+                 "💬 **用过了吗？告诉我们哪里有用、哪里不好用**：[填写意见](%s)（约 2 分钟，不需要填个人信息）"),
     "rent_src0": ("URA Residential Rental Search, latest 4 quarters", "URA 住宅租赁数据，最近 4 个季度"),
 }
 REGION_ZH = {"Central": "中部", "North": "北部", "North-East": "东北部", "East": "东部", "West": "西部"}
@@ -246,6 +248,22 @@ def t(key):
 
 def region_name(r):
     return REGION_ZH.get(r, r) if ZH else r
+
+
+def feedback_url():
+    """The feedback form link lives in Streamlit Secrets (FEEDBACK_URL), so it can change without a code change."""
+    try:
+        if st.secrets.load_if_toml_exists():
+            return str(st.secrets.get("FEEDBACK_URL", "")).strip()
+    except Exception:
+        pass
+    return ""
+
+
+def show_feedback():
+    url = feedback_url()
+    if url:
+        st.info(t("feedback") % url)
 
 
 def keep(name, value):
@@ -271,6 +289,7 @@ def rent_status(s):
 
 st.title(t("title"))
 st.caption(t("intro"))
+show_feedback()
 
 email, password = read_credentials()
 if not email:
@@ -583,3 +602,4 @@ with st.expander(t("sources")):
 info = load_build_info()
 rent_src = (t("rent_src") % (info.get("quarters", ""), info.get("built_at", "")) if info else t("rent_src0"))
 st.caption(t("footer") % (S["depart"], onemap.SHORT_TRIP_M / 1000, rent_src, " / ".join(t(h) for h in S.get("home", ["condo"])), S["beds"]))
+show_feedback()
