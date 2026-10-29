@@ -88,6 +88,27 @@ class OneMap:
                 "n_hits": res.get("found", len(hits))}
         return info, "ok", url
 
+    def search_many(self, query, limit=8):
+        """Up to `limit` OneMap matches for a partial name or postal code (for autocomplete)."""
+        if len(query.strip()) < 3:
+            return []
+        q = urllib.parse.urlencode({"searchVal": query.strip(), "returnGeom": "Y",
+                                    "getAddrDetails": "Y", "pageNum": 1})
+        try:
+            res = self._get(SEARCH_URL + "?" + q)
+        except Exception:
+            return []
+        out = []
+        for h in (res.get("results") or [])[:limit]:
+            try:
+                out.append({"lat": float(h["LATITUDE"]), "lng": float(h["LONGITUDE"]),
+                            "matched": h.get("ADDRESS") or h.get("SEARCHVAL", ""),
+                            "name": h.get("BUILDING") if h.get("BUILDING") not in (None, "", "NIL") else h.get("SEARCHVAL", ""),
+                            "postal": h.get("POSTAL", ""), "n_hits": 1})
+            except (KeyError, ValueError):
+                continue
+        return out
+
     def transit(self, start, end, date_str):
         """Public transport, fastest of up to 3 itineraries."""
         q = urllib.parse.urlencode({
@@ -105,8 +126,15 @@ class OneMap:
         if not its:
             return None, "no itinerary", url
         best = min(its, key=lambda i: i.get("duration", 10**9))
+        names = {"SUBWAY": "MRT", "RAIL": "MRT", "TRAM": "LRT", "BUS": "bus"}
+        modes = []
+        for leg in best.get("legs") or []:
+            m = names.get(str(leg.get("mode", "")).upper())
+            if m and (not modes or modes[-1] != m):
+                modes.append(m)
         return {"minutes": round(best.get("duration", 0) / 60),
                 "transfers": best.get("transfers", ""),
+                "modes": " + ".join(modes) if modes else "walk only",
                 "walk_in_trip_min": round(best.get("walkTime", 0) / 60)}, "ok", url
 
     def walk(self, start, end):
@@ -144,3 +172,23 @@ def next_tuesday(today=None):
     while d.weekday() != DEPART_WEEKDAY:
         d += datetime.timedelta(days=1)
     return d
+
+
+CITY_HALL = (1.2931, 103.8520)
+
+
+def region_of(lat, lng):
+    """Fixed, rough region by position (Central, North, North-East, East, West).
+    Only used to narrow the list of areas; not an official boundary and not a ranking."""
+    d = straight_line_m({"lat": lat, "lng": lng}, {"lat": CITY_HALL[0], "lng": CITY_HALL[1]})
+    if d < 5000:
+        return "Central"
+    if lat >= 1.40 and lng < 103.87:
+        return "North"
+    if 103.86 <= lng < 103.93 and lat >= 1.34:
+        return "North-East"
+    if lng >= 103.88:
+        return "East"
+    if lng < 103.82:
+        return "West"
+    return "Central"
