@@ -1,0 +1,142 @@
+2026-10-29 13:32 | URA Data Service PMI_Resi_Rental | 2025Q4 to 2026Q3 | 194997 contracts kept | 1012 without location
+    URA API 26q3: 3191 projects, 29154 contracts
+    URA API 26q2: 2959 projects, 23273 contracts
+    URA API 26q1: 2888 projects, 21793 contracts
+    URA API 25q4: 2838 projects, 20630 contracts
+    Area Jurong East: 508 contracts within 1000 m
+    Area Bukit Batok: 252 contracts within 1000 m
+    Area Bukit Gombak: 302 contracts within 1000 m
+    Area Choa Chu Kang: 315 contracts within 1000 m
+    Area Yew Tee: 179 contracts within 1000 m
+    Area Kranji: 1 contracts within 1000 m
+    Area Marsiling: 113 contracts within 1000 m
+    Area Woodlands: 437 contracts within 1000 m
+    Area Admiralty: 281 contracts within 1000 m
+    Area Sembawang: 364 contracts within 1000 m
+    Area Canberra: 668 contracts within 1000 m
+    Area Yishun: 304 contracts within 1000 m
+    Area Khatib: 261 contracts within 1000 m
+    Area Yio Chu Kang: 283 contracts within 1000 m
+    Area Ang Mo Kio: 143 contracts within 1000 m
+    Area Bishan: 528 contracts within 1000 m
+    Area Braddell: 461 contracts within 1000 m
+    Area Toa Payoh: 1683 contracts within 1000 m
+    Area Novena: 4506 contracts within 1000 m
+    Area Newton: 5002 contracts within 1000 m
+    Area Orchard: 3068 contracts within 1000 m
+    Area Somerset: 7026 contracts within 1000 m
+    Area Dhoby Ghaut: 3278 contracts within 1000 m
+    Area City Hall: 1634 contracts within 1000 m
+    Area Raffles Place: 2540 contracts within 1000 m
+    Area Marina Bay: 2402 contracts within 1000 m
+    Area Marina South Pier: 0 contracts within 1000 m
+    Area Pasir Ris: 398 contracts within 1000 m
+    Area Tampines: 340 contracts within 1000 m
+    Area Simei: 1348 contracts within 1000 m
+    Area Tanah Merah: 1542 contracts within 1000 m
+    Area Bedok: 394 contracts within 1000 m
+    Area Kembangan: 1394 contracts within 1000 m
+    Area Eunos: 1550 contracts within 1000 m
+    Area Paya Lebar: 2697 contracts within 1000 m
+    Area Aljunied: 3184 contracts within 1000 m
+    Area Kallang: 882 contracts within 1000 m
+    Area Lavender: 1472 contracts within 1000 m
+    Area Bugis: 2572 contracts within 1000 m
+    Area Tanjong Pagar: 4334 contracts within 1000 m
+    Area Outram Park: 3269 contracts within 1000 m
+    Area Tiong Bahru: 2164 contracts within 1000 m
+    Area Redhill: 1396 contracts within 1000 m
+    Area Queenstown: 1571 contracts within 1000 m
+    Area Commonwealth: 523 contracts within 1000 m
+    Area Buona Vista: 800 contracts within 1000 m
+    Area Dover: 884 contracts within 1000 m
+    Area Clementi: 1318 contracts within 1000 m
+    Area Chinese Garden: 699 contracts within 1000 m
+    Area Lakeside: 1437 contracts within 1000 m
+    Area Boon Lay: 190 contracts within 1000 m
+    Area Pioneer: 140 contracts within 1000 m
+    Area Joo Koon: 0 contracts within 1000 m
+    Area Expo: 341 contracts within 1000 m
+    Area Changi Airport: 0 contracts within 1000 m
+    Area HarbourFront: 975 contracts within 1000 m
+    Area Chinatown: 2591 contracts within 1000 m
+    Area Clarke Quay: 2310 contracts within 1000 m
+    Area Little India: 2757 contracts within 1000 m
+    Area Farrer Park: 2089 contracts within 1000 m
+    Area Boon Keng: 1223 contracts within 1000 m
+    Area Potong Pasir: 2045 contracts within 1000 m
+    Area Woodleigh: 1478 contracts within 1000 m
+    Area Serangoon: 1382 contracts within 1000 m
+    Area Kovan: 1501 contracts within 1000 m
+    Area Hougang: 989 contracts within 1000 m
+    Area Buangkok: 917 contracts within 1000 m
+    Area Sengkang: 548 contracts within 1000 m
+    Area Punggol: 21 contracts within 1000 m
+    Area Bras Basah: 3060 contracts within 1000 m
+    Area Esplanade: 1275 contracts within 1000 m
+    Area Promenade: 1620 contracts within 1000 m
+    Area Nicoll Highway: 2012 contracts within 1000 m
+    Area Stadium: 685 contracts within 1000 m
+    Area Mountbatten: 2511 contracts within 1000 m
+    Area Dakota: 3379 contracts within 1000 m
+    Area MacPherson: 212 contracts within 1000 m
+    Area Tai Seng: 257 contracts within 1000 m
+    Area Bartley: 1030 contracts within 1000 m
+    Area Lorong Chuan: 849 contracts within 1000 m
+    Area Marymount: 708 contracts within 1000 m
+    Area Caldecott: 462 contracts within 1000 m
+    Area Botanic Gardens: 663 contracts within 1000 m
+    Area Farrer Road: 1990 contracts within 1000 m
+    Area Holland Village: 1861 contracts within 1000 m
+    Area one-north: 586 contracts within 1000 m
+    Area Kent Ridge: 136 contracts within 1000 m
+    Area Haw Par Villa: 970 contracts within 1000 m
+    Area Pasir Panjang: 787 contracts within 1000 m
+    Area Labrador Park: 151 contracts within 1000 m
+    Area Telok Blangah: 924 contracts within 1000 m
+    Area Bayfront: 1537 contracts within 1000 m
+    Area Bukit Panjang: 721 contracts within 1000 m
+    Area Cashew: 1370 contracts within 1000 m
+    Area Hillview: 1460 contracts within 1000 m
+    Area Beauty World: 1720 contracts within 1000 m
+    Area King Albert Park: 1134 contracts within 1000 m
+    Area Sixth Avenue: 820 contracts within 1000 m
+    Area Tan Kah Kee: 880 contracts within 1000 m
+    Area Stevens: 1379 contracts within 1000 m
+    Area Rochor: 3380 contracts within 1000 m
+    Area Downtown: 2522 contracts within 1000 m
+    Area Telok Ayer: 3768 contracts within 1000 m
+    Area Fort Canning: 3808 contracts within 1000 m
+    Area Bencoolen: 3111 contracts within 1000 m
+    Area Jalan Besar: 3695 contracts within 1000 m
+    Area Bendemeer: 1669 contracts within 1000 m
+    Area Geylang Bahru: 722 contracts within 1000 m
+    Area Mattar: 726 contracts within 1000 m
+    Area Ubi: 365 contracts within 1000 m
+    Area Kaki Bukit: 668 contracts within 1000 m
+    Area Bedok North: 278 contracts within 1000 m
+    Area Bedok Reservoir: 405 contracts within 1000 m
+    Area Tampines West: 114 contracts within 1000 m
+    Area Tampines East: 340 contracts within 1000 m
+    Area Upper Changi: 1079 contracts within 1000 m
+    Area Woodlands North: 0 contracts within 1000 m
+    Area Woodlands South: 438 contracts within 1000 m
+    Area Springleaf: 104 contracts within 1000 m
+    Area Lentor: 593 contracts within 1000 m
+    Area Mayflower: 398 contracts within 1000 m
+    Area Bright Hill: 581 contracts within 1000 m
+    Area Upper Thomson: 733 contracts within 1000 m
+    Area Napier: 1040 contracts within 1000 m
+    Area Orchard Boulevard: 3068 contracts within 1000 m
+    Area Great World: 6683 contracts within 1000 m
+    Area Havelock: 5094 contracts within 1000 m
+    Area Maxwell: 4258 contracts within 1000 m
+    Area Shenton Way: 3652 contracts within 1000 m
+    Area Gardens by the Bay: 0 contracts within 1000 m
+    Area Tanjong Rhu: 593 contracts within 1000 m
+    Area Katong Park: 1089 contracts within 1000 m
+    Area Tanjong Katong: 2254 contracts within 1000 m
+    Area Marine Parade: 2420 contracts within 1000 m
+    Area Marine Terrace: 1227 contracts within 1000 m
+    Area Siglap: 1768 contracts within 1000 m
+    Area Bayshore: 1001 contracts within 1000 m

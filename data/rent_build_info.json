@@ -1,0 +1,8 @@
+{
+ "built_at": "2026-10-29 13:32",
+ "source": "URA Data Service PMI_Resi_Rental",
+ "quarters": "2025Q4 to 2026Q3",
+ "radius_m": 1000,
+ "n_contracts": 194997,
+ "contracts_without_location": 1012
+}
